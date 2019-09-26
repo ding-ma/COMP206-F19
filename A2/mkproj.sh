@@ -7,7 +7,7 @@ projectName=$1 #first arg is the project name
 projectOwner=$2 #second arg is the project owner
 numberofArgument=$# #gets the number of argument when running the scripts
 subdirList=("archive backup docs assets database source") #list of subdirectories that has to be created
-folderName="Project" # if ever the project folder name is changed, easier to deal with later
+folderName="Projects" # if ever the project folder name is changed, easier to deal with later
 
 #checks the number of cmd argumts
 if [ 2 -ne "$numberofArgument" ]; then
