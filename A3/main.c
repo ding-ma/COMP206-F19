@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <math.h>
 /*
  * Name: Ding Ma
  * ID: 260871301
@@ -15,8 +15,8 @@ int main(int argc, char *argv[]) { // int argc, char *argv[]
     if (argc == 2) { // if there are 2 arguments, take whatever number is on the command line
         sscanf(argv[1], "%d", &size);
     }
-    if (argc > 2) { // if there are more than 2 arguments, return error msg and terminate program
-        printf("An incorrect triangle size was inputted. The size must be greater than 0 and an integer number. Syntax: ./triangles SIZE");
+    if (argc > 2 || size <0) { // if there are more than 2 arguments, return error msg and terminate program
+        printf("An incorrect triangle size was inputted. The size must be greater than 0 and an integer number. Syntax: ./triangles SIZE \n");
         return -1;
     }
 
