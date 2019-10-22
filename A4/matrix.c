@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <time.h>
 /*
  * ID: 260871301
  * Name: Ding Ma
@@ -10,6 +10,7 @@
 #define COLS 5
 
 void fillMatrix(int matrix[ROWS][COLS]) {
+    srand(time(NULL));// allows ran() to have a different seed every time for pseudorandom
     for (int r = 0; r < ROWS; ++r) {
         for (int c = 0; c < COLS; ++c) {
             int numbToFill = rand() % 100 + 1; //generates a number between 1 and 100
@@ -31,12 +32,18 @@ void printMatrix(int matrix[ROWS][COLS]) {
 }
 
 void transposeMatrix(int matrix[ROWS][COLS]) {
-    int temp;
+    /*
+     * a second * is needed to dereference the pointer in order to get the value
+     *
+     * basically we need to travel from left to right, from up to down
+     * but we need to write from top to bottom, left to write.
+     */
+    int tmp;
     for (int r = 0; r < ROWS; r++) {
         for (int c = r + 1; c < COLS; c++) {
-            temp = matrix[r][c];
-            matrix[r][c] = matrix[c][r];
-            matrix[c][r] = temp;
+            tmp = *(*(matrix + r) + c);
+            *(*(matrix + r) + c) = *(*(matrix + c) + r);
+            *(*(matrix + c) + r) = tmp;
         }
     }
 }
@@ -60,10 +67,10 @@ void multiplyMatrix(int m1[2][COLS], int m2[ROWS][COLS], int resultMatrix[ROWS][
             for (int col = 0; col < COLS; ++col) {
                 int elemtOfMtx1 = matrix1[bigCol][col];
                 int elemtOfMtx2 = m2[col][row];
-                tempResult = tempResult+elemtOfMtx1*elemtOfMtx2;
+                tempResult = tempResult + elemtOfMtx1 * elemtOfMtx2;
             }
             resultMatrix[bigCol][row] = tempResult;
-            tempResult=0;
+            tempResult = 0;
         }
     }
 }
