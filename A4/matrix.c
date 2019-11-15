@@ -10,7 +10,7 @@
 #define COLS 5
 
 void fillMatrix(int matrix[ROWS][COLS]) {
-    srand(time(NULL));// allows ran() to have a different seed every time for pseudorandom
+    srand((unsigned)clock()); // allows ran() to have a different seed every time for pseudorandom
     for (int r = 0; r < ROWS; ++r) {
         for (int c = 0; c < COLS; ++c) {
             int numbToFill = rand() % 100 + 1; //generates a number between 1 and 100
