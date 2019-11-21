@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-
+/*
+ * ID: 260871301
+ * Name: Ding Ma
+ */
 // function that returns reversed word
 char *reverseStr(char *str) {
     int len = strlen(str);
