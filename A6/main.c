@@ -7,7 +7,7 @@
 *ID: 260871301 and _______
 */
 int main(int argc, char *argv[]) {
-    FILE *f = fopen("bankAccounts.ssv", "r");
+    FILE *f = fopen("mini6tester.ssv", "r");
     if(f == NULL){
         printf("File is invalid, try again");
         return 1;
