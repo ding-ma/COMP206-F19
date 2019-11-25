@@ -2,6 +2,10 @@
 #include "ssv.h"
 #include "linked.h"
 
+/*
+*Ding Ma and Mairead Maloney
+*ID: 260871301 and _______
+*/
 int main(int argc, char *argv[]) {
     FILE *f = fopen("bankAccounts.ssv", "r");
     if(f == NULL){
