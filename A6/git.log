@@ -1,0 +1,41 @@
+commit 7c4440c0992f9ef9aa6e159a27e7ebad7ad66a5a
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Mon Nov 25 00:41:43 2019 -0500
+
+    commit of the day
+
+commit a4be56b7100174112c8cc9afab38396bff864cf5
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Sun Nov 24 20:58:45 2019 -0500
+
+    modified bank
+
+commit 8ed0016d1d9d5cdd637a27e6bec81f7ada7820b2
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Sat Nov 23 10:47:27 2019 -0500
+
+    modified bankAccount.ssv
+
+commit 106047a3670bac43c6c9665c253baff83cb271f3
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Fri Nov 22 20:34:47 2019 -0500
+
+    everything is done
+
+commit 71d1fb7823ff7f5454d920abb1e0d62227eeeeb1
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Fri Nov 22 09:51:43 2019 -0500
+
+    creation of makefile with the appropriate commands
+
+commit 59858fc51a5f97fb7f2252b6fca5749ee9f3ad2c
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Thu Nov 21 17:00:12 2019 -0500
+
+    ssv.c parse function is now complete
+
+commit f5bec41297f303ec69b4cbbf079152c15455e822
+Author: Ding MA <dma24@teaching.CS.McGill.CA>
+Date:   Thu Nov 21 15:59:55 2019 -0500
+
+    initialization of all the necessary files
