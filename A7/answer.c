@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+/*
+Ding Ma, 260871301
+Mairead Maloney, 
+*/
 int main() {
     char input[100];
     char *data = getenv("QUERY_STRING");

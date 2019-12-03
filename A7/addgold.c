@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+Ding Ma, 260871301
+Mairead Maloney, 
+*/
+
 int main() {
     FILE *fp = fopen("index.html", "r");
     char buffer[1000];
